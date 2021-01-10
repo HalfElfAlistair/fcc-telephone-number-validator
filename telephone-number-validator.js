@@ -1,25 +1,25 @@
-function telephoneCheck(str) {
-    let justDigits = str.split(/\D/);
+function telephoneCheck() {
+
+    let numberString = document.getElementById("string").value;
+    let justDigits = numberString.split(/\D/);
     let digitsLength = justDigits.join("").length;
-    let openBracketCount = str.split("(").length - 1;
-    let closeBracketCount = str.split(")").length - 1;
-    let checkArray = str.split("");
+    let openBracketCount = numberString.split("(").length - 1;
+    let closeBracketCount = numberString.split(")").length - 1;
+    let checkArray = numberString.split("");
     let firstIndexInArray = checkArray[0];
-    let lastIndexInArray = checkArray[str.length-1];
+    let lastIndexInArray = checkArray[numberString.length-1];
     
-      if ((firstIndexInArray === '(') && (lastIndexInArray === ')')) {
-        return false;
-      } else if (checkArray.includes('?')) {
-        return false;
+      if ((firstIndexInArray === "(") && (lastIndexInArray === ")")) {
+        document.getElementById("telephone").innerHTML = "Sorry, that's not a valid US telephone number.";
+      } else if (checkArray.includes("?")) {
+        document.getElementById("telephone").innerHTML = "Sorry, that's not a valid US telephone number.";
       } else if (openBracketCount !== closeBracketCount) {
-        return false;
+        document.getElementById("telephone").innerHTML = "Sorry, that's not a valid US telephone number.";
       } else if ((digitsLength < 10) || (digitsLength > 11)) {
-        return false;
+        document.getElementById("telephone").innerHTML = "Sorry, that's not a valid US telephone number.";
       } else if ((digitsLength === 11) && (justDigits[0] !== '1')) {
-        return false;
+        document.getElementById("telephone").innerHTML = "Sorry, that's not a valid US telephone number.";
+      } else {
+        document.getElementById("telephone").innerHTML = "Yes, that is a valid US telephone number.";
       }
-    
-      return true;
     }
-    
-    console.log(telephoneCheck("(555)5(55?)-5555"));
