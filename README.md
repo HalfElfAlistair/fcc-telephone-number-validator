@@ -97,7 +97,7 @@ The educational and practical opportunity to develop my coding skills.
 I've found myself using multiple learning resources for JavaScript and this has been a very useful one.
 
 ### [w3schools](https://www.w3schools.com/)
-A really useful source for learning JavaScript.
+A really useful source for learning JavaScript. Particularly helpful when working with RegExp too.
 
 ### [Useful Programmer](https://www.youtube.com/channel/UCAocVBB14ixYUfdhKaSrvNQ)
 A brilliant resource to assist with learning to code.
@@ -111,8 +111,11 @@ I use their 'create a palette' tool to help me select a colour scheme.
 
 ## Author Notes
 
-As you can see from the projects I've completed so far, the JS knowledge that has mainly sunk in for me is 'if statements', 'for loops' and some of the string and array methods. I've managed to complete them so far but obviously I still have a ways to go with improving my solutions.
+When I first completed this project I'd written a lot of variable declarations and if statements. I was sure there would be a way to do this with less code and, sure enough, other people had done it in a few lines (using RegExp).
 
-Having finished this task I looked at how other people had completed it and there was an almost uniform consensus that it should be done with a single RegExp object. This makes complete sense, it's short and only took up about three or four lines, as well as iterating through once so will be faster than what I've done. Once knowledgeable on RegExp (which most programmers will be) it's probably easy to understand too. That said, novices like myself (at the time of writing) are likely only familiar with basic RegExp so arguably what I've done could be easier to understand.
+At the time I'd used little RegExp and vowed to go back over that and understand it better. Actually I found I got a lot more practice in when working on my [Cash Register](https://github.com/HalfElfAlistair/fcc-cash-register) repo.
 
-What have I learned? I definitely need to go back and immerse myself in RegExp so I can properly understand using it. Once I've done that I'll go back and improve this code but I'm also thinking of adding another function for UK phone numbers, that'll be a great test of what I've learned.
+Returning to this project I was comfortable producing much shorter code thanks to my improved RegExp knowledge. I still wasn't sure how so solve a small part so have recycled some code from my initial effort, I'm sure I can solve that with RegExp too but I'll pick that up over time.
+
+For now, I'm much happier with this effort and, more importantly, the progress I'm making with RegExp.
+
