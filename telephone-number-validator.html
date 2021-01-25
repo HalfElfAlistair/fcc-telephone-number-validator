@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<link href="assets/stylesheets/style.css" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		<!-- <link href="assets/stylesheets/style.css" rel="stylesheet"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta charset="utf-8"/>
 		<style>
 			.responsive {
@@ -12,21 +13,30 @@
     </style>
     <script src="telephone-number-validator.js" type="text/javascript" charset="utf-8"></script>
     </head>
-    <body>
-      <div class="us-conversion-section">
-        <h3>Enter the US telephone number string below.</h3>
-        <form>
-            <input type="text" id="string" value="000-000-0000">
-            <input value="Submit" onclick="telephoneCheck()" type="button" id="submit-button" class="sub-button">
-        </form>
-        <p id="telephone">Sorry, that's not a valid US telephone number.</p>
-      </div>
-      <div class="uk-conversion-section">
-        <h3>Enter the UK mobille number string below.</h3>
-        <form>
-            <input type="text" id="uk-string" value="07100 000 000">
-            <input value="Submit" onclick="ukMobileCheck()" type="button" id="submit-button" class="sub-button">
-        </form>
-        <p id="mobile">Sorry, that's not a valid UK mobile number.</p>
+    <body class="bg-info">
+      <div class="container text-light" id="intro">
+        <div class="row m-3">
+          <h1>Telephone Number Validator</h1>
+          <p>This project was completed as part of the JavaScript Algorithms and Data Structures course, found at <a href="https://www.freecodecamp.org/" target="_blank" rel="noopener" class="text-light">freeCodeCamp</a><br><br>Enter a telephone number in the field and press submit to find out whether or not it is a valid telephone number.</p>
+        </div>
+        <div class="row">
+          <div class="col-md bg-light m-3" class="us-conversion-section">
+            <h3 class="text-info mt-3">US telephone number</h3>
+            <form class="my-3">
+                <input type="text" id="string" value="000-000-0000" class="mb-4">
+                <input value="Submit" onclick="telephoneCheck()" type="button" id="submit-button" class="sub-button">
+            </form>
+            <p id="telephone"></p>
+          </div>
+          <div class="col-md bg-light m-3" class="uk-conversion-section">
+            <h3 class="text-info mt-3">UK mobille number</h3>
+            <form class="my-3">
+                <input type="text" id="uk-string" value="07100 000 000" class="mb-4">
+                <input value="Submit" onclick="ukMobileCheck()" type="button" id="submit-button" class="sub-button">
+            </form>
+            <p id="mobile"></p>
+          </div>
+        </div>
       </div>
     </body>
+</html>
