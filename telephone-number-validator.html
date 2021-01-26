@@ -17,24 +17,24 @@
       <div class="container text-light" id="intro">
         <div class="row m-3">
           <h1>Telephone Number Validator</h1>
-          <p>This project was completed as part of the JavaScript Algorithms and Data Structures course, found at <a href="https://www.freecodecamp.org/" target="_blank" rel="noopener" class="text-light">freeCodeCamp</a><br><br>Enter a telephone number in the field and press submit to find out whether or not it is a valid telephone number.</p>
+          <p>This project was completed as part of the JavaScript Algorithms and Data Structures course, found at <a href="https://www.freecodecamp.org/" target="_blank" rel="noopener" class="text-light">freeCodeCamp</a><br><br>Enter a telephone number in the field and press <b>'Input'</b> to find out whether or not it is a valid telephone number.</p>
         </div>
         <div class="row">
           <div class="col-md bg-light m-3" class="us-conversion-section">
             <h3 class="text-info mt-3">US telephone number</h3>
             <form class="my-3">
-                <input type="text" id="string" value="000-000-0000" class="mb-4">
-                <input value="Submit" onclick="telephoneCheck()" type="button" id="submit-button" class="sub-button">
+                <input type="text" id="string" value="000-000-0000" class="mb-4 w-100">
+                <input class="btn btn-primary bg-dark text-light btn-block active border-0 rounded-0" type="button" value="Input" id="submit-button" onclick="telephoneCheck()">
             </form>
-            <p id="telephone"></p>
+            <p id="telephone" class="text-dark"></p>
           </div>
           <div class="col-md bg-light m-3" class="uk-conversion-section">
             <h3 class="text-info mt-3">UK mobille number</h3>
             <form class="my-3">
-                <input type="text" id="uk-string" value="07100 000 000" class="mb-4">
-                <input value="Submit" onclick="ukMobileCheck()" type="button" id="submit-button" class="sub-button">
+                <input type="text" id="uk-string" value="07100 000 000" class="mb-4 w-100">
+                <input class="btn btn-primary bg-dark text-light btn-block active border-0 rounded-0" type="button" value="Input" id="submit-button" onclick="ukMobileCheck()">
             </form>
-            <p id="mobile"></p>
+            <p id="mobile" class="text-dark"></p>
           </div>
         </div>
       </div>
