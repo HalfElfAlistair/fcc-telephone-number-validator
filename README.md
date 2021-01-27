@@ -111,6 +111,8 @@ I use their 'create a palette' tool to help me select a colour scheme.
 
 ## Author Notes
 
+### JavaScript
+
 When I first completed this project I'd written a lot of variable declarations and if statements. I was sure there would be a way to do this with less code and, sure enough, other people had done it in a few lines (using RegExp).
 
 At the time I'd used little RegExp and vowed to go back over that and understand it better. Actually I found I got a lot more practice in when working on my [Cash Register](https://github.com/HalfElfAlistair/fcc-cash-register) repo.
@@ -118,4 +120,12 @@ At the time I'd used little RegExp and vowed to go back over that and understand
 Returning to this project I was comfortable producing much shorter code thanks to my improved RegExp knowledge. I still wasn't sure how so solve a small part so have recycled some code from my initial effort, I'm sure I can solve that with RegExp too but I'll pick that up over time.
 
 For now, I'm much happier with this effort and, more importantly, the progress I'm making with RegExp.
+
+### Design
+
+For the aesthetics of this project I decided to experiment with Bootstrap, something I'd not used much before now. In many ways I've really enjoyed using it and I think the project looks good with it. That said I do feel I can produce similar work in CSS, with greater scope for customisation.
+
+I generally tend to use a light border radius on blocks but the Bootstrap options I tried look best without radius. I also struggled to find Bootstrap customisation for hover states so this is something I may have to go and change in CSS at some point.
+
+While I like the way the colours work with this project (the combo of Bootstraps 'info' and 'light' options) they don't pass on contrast checks. I've kept them as they are for the time being but will likely look into tweaking parts so they perform better on readability.
 
